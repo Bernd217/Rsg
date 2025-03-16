@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richtig Scheiße Geparkt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header mit Logo und Navigation -->
+    <header>
+        <img src="logo.png" alt="Richtig Scheiße Geparkt Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Bilder hochladen</a></li>
+                <li><a href="#">Abstimmen</a></li>
+                <li><a href="#">Anmeldung</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hauptinhalt -->
+    <main>
+        <h1>Willkommen bei "Richtig Scheiße Geparkt!"</h1>
+        <p>Poste Fotos von katastrophalen Parkplätzen, vote für die schlimmsten und mach dich über die schlechten Parkkünste lustig!</p>
+
+        <!-- Beispiel für Bild hochladen -->
+        <h2>Bild hochladen</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="fileUpload">Lade ein Bild hoch:</label>
+            <input type="file" id="fileUpload" name="image" accept="image/*">
+            <input type="submit" value="Hochladen">
+        </form>
+
+        <!-- Abstimmung -->
+        <div class="image">
+            <img src="beispielbild.jpg" alt="Schlecht geparktes Auto">
+            <div class="vote">
+                <button onclick="vote('up')">👍</button>
+                <button onclick="vote('down')">👎</button>
+            </div>
+        </div>
+
+        <!-- Anmeldung -->
+        <h2>Benutzeranmeldung</h2>
+        <form action="/login" method="post">
+            <label for="username">Benutzername:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Passwort:</label>
+            <input type="password" id="password" name="password">
+            <input type="submit" value="Anmelden">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Richtig Scheiße Geparkt. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        function vote(type) {
+            alert("Du hast " + (type === 'up' ? "hoch" : "runter") + " abgestimmt.");
+        }
+    </script>
+</body>
+</html>
