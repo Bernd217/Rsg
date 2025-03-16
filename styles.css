@@ -1,0 +1,107 @@
+/* Allgemeine Einstellungen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header .logo {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin: 5px 0;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.vote button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.vote button:hover {
+    color: #555;
+}
